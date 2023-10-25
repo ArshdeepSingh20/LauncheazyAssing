@@ -1,0 +1,89 @@
+.workflow-category {
+    font-family: Helvetica Neue;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #595250;
+}
+
+
+.form-check-input:checked {
+    background-color: black; 
+    border-color: black; 
+}
+
+
+.form-check-input {
+    margin-top: 16px;
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    border: 1px solid #C6C6C6
+}
+
+.form-check-label {
+    margin-top: 16px;
+    font-family: Helvetica Neue;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #161616;
+}
+
+.search-bar input {
+    width: 384px;
+    height: 48px;
+    padding: 12px;
+     border-radius: 6px ;
+     margin-bottom: 40px;
+     border: 1px solid #C6C6C6;
+}
+
+.card-button {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card:hover .card-button {
+    bottom: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+    .search-bar input {
+        width: 100%; /* Adjust width as needed */
+    }
+    .card {
+        width: 100%; /* Adjust width as needed */
+        margin-right: 0;
+    }
+    .card-button {
+        bottom: -30px; /* Adjust position as needed */
+    }
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 480px) {
+    /* Hide the category section for mobile view */
+    .col-sm-3 {
+        display: none;
+    }
+
+    /* Disable hovering effect for mobile view */
+    .card:hover .card-button {
+        bottom: -50px;
+    }
+}
